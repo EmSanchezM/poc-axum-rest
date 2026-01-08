@@ -30,7 +30,3 @@ pub async fn health_check(
 
     Ok(Json(response))
 }
-
-pub async fn example_error() -> AppResult<Json<String>> {
-    Err(AppError::ValidationError("This is an example validation error".to_string()))
-}
